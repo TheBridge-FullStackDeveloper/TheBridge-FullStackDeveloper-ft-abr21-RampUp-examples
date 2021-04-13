@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <!--link a fichero CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--link a otras librerias-->
+</head>
+<body>
+    <h1>Bienvenido a mi primera página Web!</h1>
+    
+    <section>
+        <h2>Sección de noticias</h2>  
+        <!-- Con emmet: article*5>h3+p-->
+        <article>
+            <h3>Noticia 1</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum egestas euismod. Vestibulum eget rhoncus ligula, vitae euismod ante. Fusce enim libero, laoreet vitae ante eget, euismod tincidunt metus. Vestibulum rhoncus placerat felis, a efficitur massa sollicitudin sit amet. Quisque arcu neque, faucibus eu libero porttitor, suscipit convallis libero. Fusce quis porttitor dolor, in gravida mauris. In ac orci vel tellus eleifend ornare.
+            </p>
+        </article>
+        <article>
+            <h3>Noticia 2</h3>
+            <p>
+                Maecenas tempus, metus a molestie hendrerit, nibh sem ornare purus, eget iaculis justo neque et lectus. Aliquam erat volutpat. Donec eleifend nulla nunc, eget accumsan arcu convallis quis. Nam vestibulum enim nec pharetra ullamcorper. Nunc eget eleifend nisl, ac feugiat magna. Phasellus non ex at dolor accumsan suscipit sed et odio. Fusce a erat eu ante aliquam faucibus. Nunc ante ipsum, hendrerit sit amet porta a, lacinia ut leo. Donec eu tellus turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus in massa sem. Cras in molestie quam. Suspendisse eget efficitur tellus. Vestibulum consectetur, lorem id convallis viverra, ligula odio tincidunt eros, et porta quam turpis at turpis. In luctus, tortor eu scelerisque egestas, lectus tortor egestas ipsum, a vehicula risus lectus in nisi.
+            </p>
+        </article>
+        <article>
+            <h3>Noticia 3</h3>
+            <p>
+                Proin eu tempus nibh. Suspendisse sed leo gravida, fringilla nulla feugiat, faucibus enim. Etiam maximus elementum diam. Praesent varius varius ante, nec tempus arcu dictum sodales. Duis vestibulum vulputate interdum. Ut porta vel tortor ut ullamcorper. Praesent sit amet enim ut diam placerat tincidunt. Phasellus sed tempor arcu, quis sodales risus. Aliquam rhoncus neque augue, pretium condimentum magna dictum a. Etiam et metus vitae tortor congue finibus dapibus in lacus. Vestibulum et mattis massa, vitae commodo ante. Maecenas erat dolor, tempus vitae gravida eu, tempus ut tortor. Curabitur feugiat orci quam, nec dignissim ligula blandit ac. Sed et risus et dui semper aliquet a et mi. Cras erat est, consequat non ultricies et, commodo ultricies ex.
+            </p>
+        </article>
+        <article>
+            <h3>Noticia 4</h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum vero vitae tenetur accusantium laborum at assumenda qui, unde obcaecati! Eum amet dolorem eius velit modi suscipit fugiat reprehenderit ex aspernatur.
+            </p>
+        </article>
+        <article>
+            <h3>Noticia 5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel autem fuga voluptas rerum dolor mollitia, tempora itaque deserunt omnis suscipit sed accusamus, natus pariatur? Quas quos molestiae quis nisi beatae.
+            </p>
+        </article>
+    </section>
+
+    <section>
+        <h2>Lista de la compra</h2>
+        <ul>
+            <li><a href="https://es.wikipedia.org/wiki/Solanum_tuberosum" target="_blank">Patatas</a></li>
+            <li><a href="#">Pescado</a></li>
+            <li><a href="#">Naranjas</a></li>
+            <li><a href="#">Platanos</a></li>
+            <li><a href="#">Manzanas</a></li>
+        </ul>
+    </section>
+
+    <section >
+        <h2>Tabla de usarios</h2>
+        <table>
+            <tr>
+                <!--Cabeceras-->
+              <th>Nombre</th>
+              <th>Apellidos</th>
+              <th>Edad</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>Pepe</td>
+                <td>Perez</td>
+                <td>33</td>
+            </tr>
+          </table>
+    </section>
+
+    <section>
+        <h2>Mi mascota</h2>
+        <img src="img/dog.jpg" alt="perro">
+    </section>
+    
+<section>
+    <h2>Formulario de contacto</h2>
+    <form action="#">
+
+        <label for="fname">Nombre:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Introduce nombre" maxlength="20" required><br>
+
+        <label for="lname">Apellidos:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Introduce apellidos" maxlength="20" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="ejemplo@miemail.com"><br><br>
+
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br><br>
+
+        <form>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+          </form>
+
+        <label for="cities">Ciudad:</label>
+        <select id="cities" name="cities">
+            <option value="mdr">Madrid</option>
+            <option value="bcn">Valencia</option>
+            <option value="bar">Barcelona</option>
+            <option value="sev">Sevilla</option>
+        </select><br>
+
+        <label for="obs">Observaciones:</label><br>
+        <textarea name="obs" rows="5" cols="30" placeholder="Observaciones aquí..."></textarea><br>
+
+
+
+
+        <input type="checkbox" id="priv" name="priv">
+        <label for="priv"> Acepto las condiciones de privacidad</label><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+/* Selectores de etiquetas */
+body{
+    background-color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+th, td {
+    padding: 15px;
+}
+
+img{
+    width:30%;
+}
+
+/* Selectores por ID */
+
+/* Selectores por clase */
