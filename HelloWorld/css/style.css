@@ -1,0 +1,82 @@
+/* Selector universal */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Selectores de etiquetas */
+body{
+    background-color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:12px;
+}
+table{
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+th, td {
+    padding: 15px;
+}
+
+img{
+    width:40%;
+    display:block;
+    margin:auto;
+}
+
+nav > ul > li{
+    display:inline;
+}
+
+nav > ul{
+    text-align:center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2{
+    border: 3px solid rgb(52, 129, 52);
+    text-align:center;
+}
+
+
+/* Selectores por ID */
+
+/* Selectores por clase */
+
+.main-title{
+    border: 3px dotted rgb(7, 163, 7);
+    text-align:center;
+    padding: 0px 20px 0px 20px;
+}
+
+.important{
+    color:crimson;
+    font-style:italic;
+    text-decoration:underline;
+}
+
+.form-field{
+    width:100%;
+    border: 2px solid red;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+#fname{
+    background-color: rgb(208, 192, 203);
+}
+
+#lname{
+    background-color: rgb(123, 129, 216);
+}
+
+#final{
+    color:darkmagenta;
+}
