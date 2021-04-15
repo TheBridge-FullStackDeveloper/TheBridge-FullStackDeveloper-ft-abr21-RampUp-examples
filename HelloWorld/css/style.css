@@ -44,8 +44,9 @@ h2{
     border: 3px solid rgb(52, 129, 52);
     text-align:center;
 }
-
-
+section{
+    padding-top:38px;
+}
 /* Selectores por ID */
 
 /* Selectores por clase */
@@ -67,16 +68,70 @@ h2{
     border: 2px solid red;
     border-radius: 4px;
     margin-bottom: 5px;
+
 }
 
-#fname{
+.form-field:focus{
+    background-color: lightblue;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    background-color: #cae8e2;
+    border: 1px solid #4CAF50;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #cae8e2;
+    border: 3px solid #73AD21;
+}
+
+.hidden p{
+    display:none;
+}
+
+.hidden:hover p{
+    display:block;
+}
+
+.button {
+    background-color: #008CBA;
+    color: white;
+    border: 2px solid #008CBA;
+    padding: 16px 32px;
+  }
+  
+.button:hover {
+    background-color: rgb(231, 102, 102); 
+    color: black; 
+
+}
+
+
+/* #fname{
     background-color: rgb(208, 192, 203);
 }
 
 #lname{
     background-color: rgb(123, 129, 216);
-}
+} */
 
 #final{
     color:darkmagenta;
 }
+
+#dog figcaption{
+    visibility:hidden;
+    text-align:center;
+    margin-top:2px;
+}
+
+#dog:hover figcaption{
+    visibility:visible;
+}
+
+
