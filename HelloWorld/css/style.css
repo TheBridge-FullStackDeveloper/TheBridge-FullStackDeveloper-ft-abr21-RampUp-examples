@@ -47,6 +47,10 @@ h2{
 section{
     padding-top:38px;
 }
+
+footer > div{
+    text-align:center;
+}
 /* Selectores por ID */
 
 /* Selectores por clase */
@@ -134,4 +138,16 @@ section{
     visibility:visible;
 }
 
+
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 7%;
+}
+
+.logo img {
+  height: auto;
+  width: 100%;
+}
 
