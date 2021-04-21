@@ -228,6 +228,101 @@ function probandoArray(){
 
 
 
+//Crea una función que pida un número por parámetro y guarde su tabla de multiplicar en un array.
+//Ejemplo --> Tabla del 3 --> [3,6,9,12,15,18,21,24,27,30] --> num*i --> 3*i
+
+function calculaTabla(num){
+
+    let tabla = []; // Inicializar a array vacío
+
+    for(let i=1;i<=10;i++){// i varía desde 1...10
+        tabla.push(num*i); // Meter valor al array
+    }
+    return tabla; // devolver resultado
+}
+
+calculaTabla(3); // se ejecuta pero no se ve
+console.log("******");
+console.log(calculaTabla(3));
+console.log("******");
+
+
+let res = calculaTabla(5); //almacenar valor devuelto en variable
+console.log(res);
+console.log("tabla del 5:"+ res);
+
+// let numero = parseInt(prompt("introduce número"));
+// console.log(calculaTabla(numero));
+
+
+// Crea una función que pida números por teclado (prompt) y mételos en un array. Cuando el usuario meta un 0, dejaremos de insertar(habrá que usar un bucle que pregunte constantemente). Por último, ordena los números ordenados de menor a mayor y devuelve el array. Prompt() devuelve un string. hay que convertirlo a entero con parseInt()
+
+function insertarNumero(){
+
+    let numeros = [];
+    let num = 1;
+    
+    while(num!=0){
+        num = parseInt(prompt("introduce número"));
+        if(num !== 0){
+            numeros.push(num);
+        }
+    }
+    // https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+    return numeros.sort(function(a, b) {
+        return a - b;
+      }); // array de número devueltos, ordenados
+}
+
+// console.log(insertarNumero());
+
+// Objetos --> conjunto de pares clave-valor (key-value)
+// Objeto JSON 
+// Objeto NO iterable. No tiene posiciones
+
+let coche = {
+                marca: "Peugeot",
+                modelo: "Partner",
+                color: "rojo",
+                combustible:"diesel",
+                peso: 1500,
+                velocidad: 0,
+                acelerar: function(incremento){
+                    this.velocidad += incremento;
+                    
+                    console.log(`acelerando. Incrementando: ${incremento} km/h. Nueva velocidad: ${this.velocidad} km/h`);
+                },
+                girar: function(direccion){
+                    console.log(`Girando hacia la: ${direccion}`);
+                },
+                pintarCoche: function(nuevoColor){
+                    this.color = nuevoColor;
+                }
+            }; 
+
+// Desde fuera del objeto
+console.log(coche);
+
+coche.color = "verde";
+console.log(coche.color);
+// acceder a datos
+console.log(coche.modelo);
+console.log(coche["modelo"]);
+coche.acelerar(30); // invoca la función
+coche.acelerar(10); // invoca la función 40
+coche.acelerar(30); // invoca la función  km/h
+
+coche.girar("izquierda");
+coche.girar("derecha");
+
+coche.pintarCoche("azul");
+console.log(`El nuevo color es: ${coche.color}`);
+
+
+
+
+
+
 
 
 
