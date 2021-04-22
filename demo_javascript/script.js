@@ -240,7 +240,7 @@ function calculaTabla(num){
     }
     return tabla; // devolver resultado
 }
-
+/* 
 calculaTabla(3); // se ejecuta pero no se ve
 console.log("******");
 console.log(calculaTabla(3));
@@ -249,7 +249,7 @@ console.log("******");
 
 let res = calculaTabla(5); //almacenar valor devuelto en variable
 console.log(res);
-console.log("tabla del 5:"+ res);
+console.log("tabla del 5:"+ res); */
 
 // let numero = parseInt(prompt("introduce número"));
 // console.log(calculaTabla(numero));
@@ -299,7 +299,7 @@ let coche = {
                     this.color = nuevoColor;
                 }
             }; 
-
+/* 
 // Desde fuera del objeto
 console.log(coche);
 
@@ -316,7 +316,128 @@ coche.girar("izquierda");
 coche.girar("derecha");
 
 coche.pintarCoche("azul");
-console.log(`El nuevo color es: ${coche.color}`);
+console.log(`El nuevo color es: ${coche.color}`); */
+
+
+// DOM
+
+document.getElementById("boton1").addEventListener("click", function(){
+    //alert("Cambiando texto");
+    // cambios en el parrafo
+    let p = document.getElementById("cambio");
+    p.innerHTML = "mensaje cambiado";
+    p.style.backgroundColor = "blue";
+    p.style.color = "yellow";
+    
+    // cambios en el body
+    document.body.style.backgroundColor = "aqua";
+
+    // cambiar estilo boton
+    let boton = document.getElementById("boton1"); 
+
+    // if(boton.className == "amarillo"){
+    //     boton.className = "rojo";
+    // }else{
+    //     boton.className = "amarillo";
+    // }
+    boton.classList.toggle("rojo"); // intercambia amarillo por rojo
+   
+})
+
+
+document.getElementById("cambio2").addEventListener("mouseover", function(){ // Funcion de callback, que es también anonima
+    let p = document.getElementById("cambio2");
+    p.innerHTML = "Tachán!";
+    p.style.backgroundColor = "blue";
+    p.style.color = "yellow";
+})
+
+
+
+
+function restablecerColores(){
+ 
+    let p = document.getElementById("cambio2");
+    p.innerHTML = "Pasa por encima :) ";
+    p.style.backgroundColor = "white";
+    p.style.color = "black";
+}
+
+
+document.getElementById("cambio2").addEventListener("mouseout", restablecerColores);
+
+
+// Más selectores
+
+let parrafo1 = document.getElementsByTagName("p")[0].innerHTML;
+let parrafo2 = document.getElementsByTagName("p")[1].innerHTML;
+console.log("parrafos"+parrafo1 + parrafo2);
+
+
+let parrafos = document.getElementsByTagName("p"); // devuelve TODOS los parrafos
+for(let i=0;i<parrafos.length;i++){
+    console.log(parrafos[i].innerHTML);
+}
+
+// Accediendo a links
+
+let links = document.getElementsByTagName("a"); 
+for(let i=0;i<links.length;i++){
+    console.log(links[i].href);
+}
+
+// ClassName
+let li1 = document.getElementsByClassName("clase1");
+for(let i=0;i<li1.length;i++){
+    console.log(li1[i]);
+}
+
+
+let li2 = document.getElementsByClassName("clase2");
+for(let i=0;i<li2.length;i++){
+    console.log(li2[i]);
+}
+
+// Query Selector (devuelve 1)
+let elemento = document.querySelector(".clase1");
+console.log(elemento);
+
+// Query SelectorAll (devuelve todo)
+console.log("***QuerySelectorAll****")
+let lista1 = document.querySelectorAll(".clase1");
+console.log(lista1);
+
+console.log(lista1[0].innerText);// Devuelve uno solo
+
+
+for(let i=0;i<lista1.length;i++){
+    console.log(lista1[i].innerText);
+}
+
+
+let lista2 = document.querySelectorAll(".clase2 > a");
+console.log(lista2[0].href);
+
+
+// pruebas con selectores
+console.log(document.getElementById('miId1').innerText) // uno
+console.log(document.querySelector('#miDiv .miClase').innerText) // cinco
+console.log(document.querySelector('#miDiv #miId1.miClase').innerText) // uno
+
+console.log(document.querySelectorAll("#miDiv .miClase"));
+   
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
