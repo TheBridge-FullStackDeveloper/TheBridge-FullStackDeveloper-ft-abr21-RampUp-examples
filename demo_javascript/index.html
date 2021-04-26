@@ -35,6 +35,35 @@
         <div id="contenido">
             <p>Creado desde HTML</p>
         </div>
+
+        <div>
+            <h2>Validación de formularios</h2>
+
+            <form id ="form1" action="#" method="POST">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Introduce nombre..."><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Introduce apellido..."><br><br>
+                
+                <!-- Radio button -->
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+
+                <!--Check-->
+                <input type="checkbox" id="acepta" name="acepta" value="acepta">
+                <label for="acepta"> Acepta el envío de spam a su correo</label><br>
+            
+                <input type="submit" value="Enviar">
+            </form>
+            <div id="datos"></div> 
+        </div>
+        
+
+
     
      
 

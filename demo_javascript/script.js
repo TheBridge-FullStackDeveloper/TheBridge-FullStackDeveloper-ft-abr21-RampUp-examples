@@ -460,6 +460,50 @@ document.getElementById("boton3").addEventListener("click",function(){
 })
 
 
+// Validación formularios
+
+document.getElementById("form1").addEventListener("submit",function(event){
+    
+    event.preventDefault(); // "cancela" el envío del formulario
+
+    console.log(event.target.elements.fname.value); // Devuelve name="fname". Vale accede a valor
+    console.log(event.target.elements.lname.value);
+    
+    let nombre = event.target.elements.fname.value;// Devuelve name="fname". Vale accede a valor
+    let apellido = event.target.elements.lname.value;
+    // nombre == "" ó nombre.length == 0
+    
+    let opcion = event.target.elements.gender.value; // Opción marcada
+    console.log(opcion);
+
+    let acepta = event.target.elements.acepta.checked;
+    console.log(acepta)
+
+    if(nombre.length == 0 || apellido.length == 0 ){
+        alert("Porfa, rellena nombre y apellidos");
+    }else if(acepta == false){ // Si no está chequeado, no te deja enviar
+        alert("Por favor, acepte el envío de Spam");
+    }
+    else{
+        alert(`Formulario enviado. Usted envió:
+            Nombre: ${nombre}
+            Apellido: ${apellido}
+            Gender: ${opcion}
+            Acepta spam: ${acepta}
+        `);
+        document.getElementById("datos").innerHTML = 
+        `<pre>Formulario enviado. Usted envió:
+        Nombre: ${nombre}
+        Apellido: ${apellido}
+        Gender: ${opcion}
+        Acepta spam: ${acepta}
+        </pre>`;
+        // Reanudar el envío del formulario
+        //event.target.submit(); // Cuando enviemos el formulario "de verdad"
+    }
+
+})
+
 
 
 
