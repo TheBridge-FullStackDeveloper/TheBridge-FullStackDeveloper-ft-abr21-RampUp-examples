@@ -425,7 +425,43 @@ console.log(document.querySelector('#miDiv .miClase').innerText) // cinco
 console.log(document.querySelector('#miDiv #miId1.miClase').innerText) // uno
 
 console.log(document.querySelectorAll("#miDiv .miClase"));
-   
+
+
+// Crear nuevos elementos
+let p1 = document.createElement("p"); 
+let txt1 = document.createTextNode("Párrafo Creado desde JS");
+p1.appendChild(txt1); // une p1 --> txt1
+
+//document.body.appendChild(p1); // une body --> p1
+document.getElementById("contenido").appendChild(p1);// une #contenido --> p1
+
+// Borrar un elemento
+document.getElementById("boton2").addEventListener("click",function(){
+    document.getElementById("miId2").remove();
+})
+
+// Modificar un elemento
+document.getElementById("boton3").addEventListener("click",function(){
+    //document.getElementById("miId2").remove();
+    let span1 = document.createElement("span");
+    // Añadir atributos
+    span1.setAttribute("id","miId50");
+    span1.setAttribute("class","miClaseBuena");
+    span1.setAttribute("title","tres");
+
+    let txt = document.createTextNode("WWWWWW");
+    span1.appendChild(txt); // span1-->txt
+
+    
+    let padre = document.getElementById("miDiv"); // div padre
+    let hijo = document.getElementById("miId1"); // span a cambiar
+    padre.replaceChild(span1,hijo); // reemplaza span1 por hijo
+
+})
+
+
+
+
 
 
 
