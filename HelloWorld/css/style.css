@@ -151,7 +151,54 @@ footer > div{
   width: 100%;
 }
 
-/* flexbox stuff in about route */
+/* flexbox stuff in index page */
+.rvm {
+    position: absolute;
+    height: 100%;
+    width: 70px;
+    z-index: 90;
+}
+main > section {
+    display: flex;
+    flex-direction: column;
+}
+
+section form {
+    width: 80%;
+}
+#news {
+    align-items: center;
+}
+
+#users {
+    align-items: center;
+}
+
+#contact {
+    align-items: center;
+}
+
+#users > table {
+    width: 80%;
+    min-width: 500px;
+    display: flex;
+}
+
+
+h2 {
+    width: 100%;
+}
+
+article {
+    width: 80%;
+    min-width: 500px;
+}
+
+body {
+    min-width: 500px;
+}
+
+/* flexbox stuff in about page */
 
 .aboutContainer {
     display: flex;
@@ -169,6 +216,4 @@ footer > div{
 .pimPam {
     width: 600px;
     height: 350px;
-
-
 }
