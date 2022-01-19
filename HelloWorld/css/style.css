@@ -151,3 +151,24 @@ footer > div{
   width: 100%;
 }
 
+/* flexbox stuff in about route */
+
+.aboutContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.aboutText {
+    width: 600px;
+    height: 300px;
+    margin-bottom: 2%;
+}
+
+.pimPam {
+    width: 600px;
+    height: 350px;
+
+
+}
