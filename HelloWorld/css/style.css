@@ -181,9 +181,7 @@ section form {
 #users > table {
     width: 80%;
     min-width: 500px;
-    display: flex;
 }
-
 
 h2 {
     width: 100%;
@@ -199,21 +197,34 @@ body {
 }
 
 /* flexbox stuff in about page */
-
-.aboutContainer {
+.wrapContainer {
+    min-width: 530px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+}
+
+.card {
+    background-color: #a9ffac;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     padding: 5%;
+    border-radius: 15px;
+    margin: 15px
 }
 
 .aboutText {
-    width: 600px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin-bottom: 2%;
+    margin-right: 2%;
 }
 
-.pimPam {
-    width: 600px;
-    height: 350px;
+.ramen {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
 }
